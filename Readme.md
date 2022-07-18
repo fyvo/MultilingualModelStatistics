@@ -1,8 +1,8 @@
 # MultilingualModelStatistics
 
-Attempts to reconstruct the multilingual content of large language models and the associated training resources.
+Attempts to reconstruct the multilingual content of large language models and the associated training resources, using normalized (ISO) language codes.
 
-For the English models, we assume 100% English even though the statistics of [Blevins and Zettlemoyer, 2002](https://arxiv.org/pdf/2204.08110v2.pdf) tell that there is some "contimation" (very poor choice of word IMO) from other languages.
+For the English models, we assume 100% English even though the statistics of ([Blevins and Zettlemoyer, 2002])(https://arxiv.org/pdf/2204.08110v2.pdf) tell that there is some "contimation" (very poor choice of word IMO) from other languages.
 
 For each model, the three first codes are the ISO standard, then the language name in the dataset, then the number of  Kilo-tokens and the percentage in the training data. This is only indicative of what the model has seen in training, since low-resource languages are usually oversampled (and high-resource languages) upsampled. Missing values are "??"
 
@@ -25,7 +25,7 @@ The language list is available at source https://github.com/google-research/bert
 ## [GPT-3](https://arxiv.org/abs/2005.14165)
 
 Mostly English
-[Language statistics]((https://raw.githubusercontent.com/openai/gpt-3/master/dataset_statistics/languages_by_word_count.csv) contains iw, jw and zh-Hant which are not valid codes.
+[Language statistics](https://raw.githubusercontent.com/openai/gpt-3/master/dataset_statistics/languages_by_word_count.csv) contains iw, jw and zh-Hant which are not valid codes.
 \cite{Lin22} claims GPT3 contains traces of 118 languages, 93% of the train data is English
 
 ## [mT5](https://aclanthology.org/2021.naacl-main.41.pdf)
@@ -56,6 +56,6 @@ Uses the Common Crawl 100  training corpus. The language statistics are in Table
 
 Bloom is trained on 46 languages
 
-# # Other Resources
+## Other Resources
 - [language codes from SIL](https://iso639-3.sil.org/code_tables/639/data)
 - [WALS](https://wals.info/languoid)
