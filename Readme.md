@@ -2,9 +2,9 @@
 
 Attempts to reconstruct the multilingual content of large language models and the associated training resources, using normalized (ISO) language codes.
 
-For the English models, we assume 100% English even though the statistics of [(Blevins and Zettlemoyer, 2002)](https://arxiv.org/pdf/2204.08110v2.pdf) tell that there is some "contimation" (very poor choice of word IMO) from other languages.
+For the English models, we assume 100% English even though the statistics of [(Blevins and Zettlemoyer, 2002)](https://arxiv.org/pdf/2204.08110v2.pdf) tell that there is some "contimation" (very poor choice of word) from other languages.
 
-For each model, the three first codes are the ISO standard, then the language name in the dataset, then the number of  Kilo-tokens and the percentage in the training data. This is only indicative of what the model has seen in training, since low-resource languages are usually oversampled (and high-resource languages) upsampled. Missing values are "??"
+For each model, the three first codes are the ISO standard, then the language name in the dataset, then the number of  Kilo-tokens and the percentage in the training data. This is only indicative of what the model has seen in training, since low-resource languages are usually oversampled (and high-resource languages upsampled). Missing values are "??"
 
 ## [ISO standards page from the Library of Congress](https://www.loc.gov/standards/iso639-2/ascii_8bits.html)
 - An alpha-3 (bibliographic) code,
