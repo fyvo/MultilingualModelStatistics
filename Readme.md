@@ -6,7 +6,7 @@ For the English models, we assume 100% English even though the statistics of [(B
 
 For each model, the three first codes are the ISO standard, then the language name in the dataset, then the number of  Kilo-tokens and the percentage in the training data. This is only indicative of what the model has seen in training, since low-resource languages are usually oversampled (and high-resource languages) upsampled. Missing values are "??"
 
-## [ISO standards page from the Library of Congress][https://www.loc.gov/standards/iso639-2/ascii_8bits.html]
+## [ISO standards page from the Library of Congress](https://www.loc.gov/standards/iso639-2/ascii_8bits.html)
 - An alpha-3 (bibliographic) code,
 - an alpha-3 (terminologic) code (when given),
 - an alpha-2 code (when given),
