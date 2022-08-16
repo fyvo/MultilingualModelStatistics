@@ -4,7 +4,7 @@ Attempts to reconstruct the multilingual content of large language models and th
 
 For the English models, we assume 100% English even though the statistics of ([Blevins and Zettlemoyer, 2002])(https://arxiv.org/pdf/2204.08110v2.pdf) tell that there is some "contimation" (very poor choice of word IMO) from other languages.
 
-For each model, the three first codes are the ISO standard, then the language name in the dataset, then the number of  Kilo-tokens and the percentage in the training data. This is only indicative of what the model has seen in training, since low-resource languages are usually oversampled (and high-resource languages) upsampled. Missing values are "??"
+For each model, the three first codes are the ISO standard, then the language name in the dataset, then the number of  Kilo-tokens and the percentage in the training data. This is only indicative of what the model has seen in training, since low-resource languages are usually oversampled (and high-resource languages downsampled). Missing values are "??"
 
 ## [ISO standards page from the Library of Congress][https://www.loc.gov/standards/iso639-2/ascii_8bits.html]
 - An alpha-3 (bibliographic) code,
@@ -33,6 +33,8 @@ Mostly English
 mT5 is pretrained on the mC4 corpus, covering 101 languages:
 
 Afrikaans, Albanian, Amharic, Arabic, Armenian, Azerbaijani, Basque, Belarusian, Bengali, Bulgarian, Burmese, Catalan, Cebuano, Chichewa, Chinese, Corsican, Czech, Danish, Dutch, English, Esperanto, Estonian, Filipino, Finnish, French, Galician, Georgian, German, Greek, Gujarati, Haitian Creole, Hausa, Hawaiian, Hebrew, Hindi, Hmong, Hungarian, Icelandic, Igbo, Indonesian, Irish, Italian, Japanese, Javanese, Kannada, Kazakh, Khmer, Korean, Kurdish, Kyrgyz, Lao, Latin, Latvian, Lithuanian, Luxembourgish, Macedonian, Malagasy, Malay, Malayalam, Maltese, Maori, Marathi, Mongolian, Nepali, Norwegian, Pashto, Persian, Polish, Portuguese, Punjabi, Romanian, Russian, Samoan, Scottish Gaelic, Serbian, Shona, Sindhi, Sinhala, Slovak, Slovenian, Somali, Sotho, Spanish, Sundanese, Swahili, Swedish, Tajik, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu, Uzbek, Vietnamese, Welsh, West Frisian, Xhosa, Yiddish, Yoruba, Zulu.
+
+The original paper also reports the actual proportion of tokens seen in training.
 
 ##  [mGPT](https://arxiv.org/pdf/2204.07580)
 
